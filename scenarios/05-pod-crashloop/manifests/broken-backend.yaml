@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend
+  labels:
+    run: backend
+
+spec:
+  containers:
+  - name: backend
+    image: nginx
+
+    command:
+    - sh
+    - -c
+    - exit 1
