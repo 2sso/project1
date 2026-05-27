@@ -86,7 +86,7 @@ curl backend
 Welcome to nginx!
 ```
 
-![normal](./screenshots/01-normal-request.png)
+![normal](./screenshots/01-normal-state.png)
 
 ---
 
@@ -191,8 +191,6 @@ backend.default.svc.cluster.local
 
 즉, DNS 문제는 아님
 
-![dns-ok](./screenshots/02-dns-ok.png)
-
 ---
 
 ### 2. Service 확인
@@ -239,8 +237,6 @@ kubectl get endpoints backend
 
 > Kubernetes Service는 Ready 상태 Pod만 Endpoint로 등록한다.
 
-![endpoint-none](./screenshots/04-endpoint-none.png)
-
 ---
 
 ### 4. Pod 상태 확인
@@ -276,7 +272,9 @@ Back-off restarting failed container
 * Kubernetes가 재시작 반복
 * CrashLoopBackOff 발생
 
-![crashloop](./screenshots/05-crashloop.png)
+![crashloop](./screenshots/02-crashloop.png)
+
+![troubleshooting](./screenshots/04-troubleshooting.png)
 
 ---
 
@@ -347,7 +345,7 @@ curl backend
 Welcome to nginx!
 ```
 
-![recovered](./screenshots/06-recovered.png)
+![recovered](./screenshots/05-recovered.png)
 
 ---
 
