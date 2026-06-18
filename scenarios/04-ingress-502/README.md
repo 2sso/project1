@@ -279,4 +279,4 @@ Welcome to nginx!
 * Ingress 장애는 DNS 문제가 아니라 upstream routing 문제일 수 있다.
 * Pod와 Service가 정상이어도 Ingress backend 설정 오류로 서비스 장애가 발생할 수 있다.
 * HTTP 503 발생 시 Pod → Service → Ingress 순으로 확인하는 접근이 효과적이었다.
-* Service name typo는 실무에서 자주 발생하는 설정 실수 중 하나다.
+* Service name typo는 자주 발생하는 설정 실수 중 하나다.
