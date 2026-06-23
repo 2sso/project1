@@ -69,11 +69,3 @@ Kubernetes를 학습할 때는 Pod, Service, DNS, NetworkPolicy를 각각 독립
     ├── 04-ingress-502/
     └── 05-pod-crashloop/
 ```
-
----
-
-## 배운 점
-
-장애를 무작정 분석하기보다 Endpoint 확인, 로그 조회 같은 기본적인 점검부터 시작해 범위를 좁혀가는 접근이 원인을 더 빠르게 찾는 데 효과적이었다.
-
-같은 증상도 DNS, Service, NetworkPolicy, Ingress, Pod 등 서로 다른 원인에서 발생할 수 있어, 특정 기술을 아는 것보다 어떤 순서로 확인하고 검증하는지가 장애 해결 속도를 결정한다는 점을 경험할 수 있었다.
