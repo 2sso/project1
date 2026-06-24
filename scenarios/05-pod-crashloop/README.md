@@ -94,7 +94,7 @@ Welcome to nginx!
 
 backend pod가 시작 직후 종료되도록 command를 의도적으로 변경하였습니다.
 
-### crash-pod.yaml
+### broken-backend.yaml
 
 ```yaml
 apiVersion: v1
@@ -129,7 +129,7 @@ CrashLoopBackOff 상태를 유도하였습니다.
 ### Apply
 
 ```bash
-kubectl apply -f crash-pod.yaml
+kubectl apply -f broken-backend.yaml
 ```
 
 ---
