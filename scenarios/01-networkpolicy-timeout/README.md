@@ -46,9 +46,7 @@ backend service (ClusterIP)
 backend pod (nginx)
 ```
 
-### Architecture Diagram
-
-![architecture](./screenshots/architecture.png)
+> 전체 클러스터 구성과 정상/장애 시 네트워크 흐름은 [docs/architecture.md](../../docs/architecture.md)에서 확인할 수 있습니다.
 
 ---
 
@@ -347,7 +345,6 @@ Welcome to nginx!
 ├── manifests
 │   └── deny-backend.yaml
 └── screenshots
-    ├── architecture.png
     ├── 01-normal-curl.png
     ├── 02-timeout-error.png
     ├── 03-dns-ok.png
